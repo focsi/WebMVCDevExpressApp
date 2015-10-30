@@ -1,0 +1,53 @@
+﻿<html ng-app="myApp">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="/Content/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/dx.light.css" />
+    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    <script src="~/Scripts/jquery.globalize/globalize.js"></script>
+    @*<script src="~/Scripts/dx.webappjs.js"></script>*@
+    <script src="~/Scripts/dx.webappjs.debug.js"></script>>
+    <script src="~/Scripts/app/script_GridAngular.js"></script>
+</head>
+<body ng-controller="gridCtrl">
+    <div dx-text-box="{
+             placeholder: 'Elemek száma',
+             text: elemekSzama
+             }">
+    </div>
+    <div dx-button="{
+             text: 'Frissít',
+             onClick: elemekSzamaChanged
+             }"></div>
+    <div style="height:600px; max-width:750px; margin: 0 auto" dx-data-grid="{
+        dataSource: elemiMunkakList,
+        allowColumnResizing: true,
+        columns: [
+            { dataField: 'AZONOSITO', width: 50 },
+            { dataField: 'CIM', allowGrouping: false },
+            { dataField: 'MAIN', allowResizing: true, sortIndex: 0, sortOrder: 'asc', allowGrouping: true },
+            { dataField: 'KESZULTSEG', visible: false },
+            { dataField: 'PRIORITAS', width: 65, allowGrouping: false },
+        ],
+        columnChooser: { enabled: true },
+        allowColumnReordering: true,
+        sorting: { mode: 'multiple' },
+        groupPanel: { visible: true, emptyPanelText: 'Drag a column header here to group grid records' },
+        pager: { visible: true },
+        paging: { pageSize: 20 },
+        editing: {
+            editEnabled: true,
+            editMode: 'row',
+            insertEnabled: true,
+            removeEnabled: true
+        },
+        filterRow: { visible: true },
+        searchPanel: { visible: true },
+        selection: { mode: 'none' }
+    }"></div>
+</body>
+</html>
+

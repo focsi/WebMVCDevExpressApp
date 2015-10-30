@@ -26,5 +26,12 @@ namespace WebMVCDevExpressApp.Controllers
 
             return View();
         }
+
+        public ActionResult Grid()
+        {
+            ViewBag.Message = "Datagrid page.";
+
+            return View();
+        }
     }
 }

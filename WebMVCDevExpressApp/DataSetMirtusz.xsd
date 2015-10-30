@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMirtusz" targetNamespace="http://tempuri.org/DataSetMirtusz.xsd" xmlns:mstns="http://tempuri.org/DataSetMirtusz.xsd" xmlns="http://tempuri.org/DataSetMirtusz.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_ELEMI_MUNKA_IN_M_LISTTableAdapter" GeneratorDataComponentClassName="V_ELEMI_MUNKA_IN_M_LISTTableAdapter" Name="V_ELEMI_MUNKA_IN_M_LIST" UserDataComponentName="V_ELEMI_MUNKA_IN_M_LISTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="MIRTUSZ.V_ELEMI_MUNKA_IN_M_LIST" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AZONOSITO, MAIN, KESZULTSEG, PRIORITAS, IDO, BEJSZ, MUNKASZAM, CIM, START_IDO, KOMPLEX_MUNKA_AZONOSITO, SORSZAM, STATUSZ, TERVEZETT_KEZDET_IDO, TERVEZETT_VEG_IDO, VEGREHAJTAS_KEZDET_IDO, VEGREHAJTAS_VEG_IDO, KANORMTEV_AZONOSITO, KOV_KOPRIO_AZONOSITO, KOV_KANORMTEV_MEGNEVEZES, KOV_KOPRIO_MEGNEVEZES, MUNKAKEZDES, MUNKABEFEJEZES, OSYSDATE, MAIN_ICON, ICON0, ICON1 FROM MIRTUSZ.V_ELEMI_MUNKA_IN_M_LIST</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AZONOSITO" DataSetColumn="AZONOSITO" />
+              <Mapping SourceColumn="MAIN" DataSetColumn="MAIN" />
+              <Mapping SourceColumn="KESZULTSEG" DataSetColumn="KESZULTSEG" />
+              <Mapping SourceColumn="PRIORITAS" DataSetColumn="PRIORITAS" />
+              <Mapping SourceColumn="IDO" DataSetColumn="IDO" />
+              <Mapping SourceColumn="BEJSZ" DataSetColumn="BEJSZ" />
+              <Mapping SourceColumn="MUNKASZAM" DataSetColumn="MUNKASZAM" />
+              <Mapping SourceColumn="CIM" DataSetColumn="CIM" />
+              <Mapping SourceColumn="START_IDO" DataSetColumn="START_IDO" />
+              <Mapping SourceColumn="KOMPLEX_MUNKA_AZONOSITO" DataSetColumn="KOMPLEX_MUNKA_AZONOSITO" />
+              <Mapping SourceColumn="SORSZAM" DataSetColumn="SORSZAM" />
+              <Mapping SourceColumn="STATUSZ" DataSetColumn="STATUSZ" />
+              <Mapping SourceColumn="TERVEZETT_KEZDET_IDO" DataSetColumn="TERVEZETT_KEZDET_IDO" />
+              <Mapping SourceColumn="TERVEZETT_VEG_IDO" DataSetColumn="TERVEZETT_VEG_IDO" />
+              <Mapping SourceColumn="VEGREHAJTAS_KEZDET_IDO" DataSetColumn="VEGREHAJTAS_KEZDET_IDO" />
+              <Mapping SourceColumn="VEGREHAJTAS_VEG_IDO" DataSetColumn="VEGREHAJTAS_VEG_IDO" />
+              <Mapping SourceColumn="KANORMTEV_AZONOSITO" DataSetColumn="KANORMTEV_AZONOSITO" />
+              <Mapping SourceColumn="KOV_KOPRIO_AZONOSITO" DataSetColumn="KOV_KOPRIO_AZONOSITO" />
+              <Mapping SourceColumn="KOV_KANORMTEV_MEGNEVEZES" DataSetColumn="KOV_KANORMTEV_MEGNEVEZES" />
+              <Mapping SourceColumn="KOV_KOPRIO_MEGNEVEZES" DataSetColumn="KOV_KOPRIO_MEGNEVEZES" />
+              <Mapping SourceColumn="MUNKAKEZDES" DataSetColumn="MUNKAKEZDES" />
+              <Mapping SourceColumn="MUNKABEFEJEZES" DataSetColumn="MUNKABEFEJEZES" />
+              <Mapping SourceColumn="OSYSDATE" DataSetColumn="OSYSDATE" />
+              <Mapping SourceColumn="MAIN_ICON" DataSetColumn="MAIN_ICON" />
+              <Mapping SourceColumn="ICON0" DataSetColumn="ICON0" />
+              <Mapping SourceColumn="ICON1" DataSetColumn="ICON1" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="MIRTUSZ.V_ELEMI_MUNKA_IN_M_LIST" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        AZONOSITO, MAIN, KESZULTSEG, PRIORITAS, IDO, BEJSZ, MUNKASZAM, CIM, START_IDO, KOMPLEX_MUNKA_AZONOSITO, SORSZAM, STATUSZ, TERVEZETT_KEZDET_IDO, TERVEZETT_VEG_IDO, 
+                         VEGREHAJTAS_KEZDET_IDO, VEGREHAJTAS_VEG_IDO, KANORMTEV_AZONOSITO, KOV_KOPRIO_AZONOSITO, KOV_KANORMTEV_MEGNEVEZES, KOV_KOPRIO_MEGNEVEZES, MUNKAKEZDES, 
+                         MUNKABEFEJEZES, OSYSDATE, MAIN_ICON, ICON0, ICON1
+FROM            V_ELEMI_MUNKA_IN_M_LIST
+WHERE        rownum &lt; :SOROK
+ORDER BY AZONOSITO</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="SOROK" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="Int32" Direction="Input" ParameterName="SOROK" Precision="0" ProviderType="Int32" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMirtusz" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMirtusz" msprop:Generator_UserDSName="DataSetMirtusz">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_ELEMI_MUNKA_IN_M_LIST" msprop:Generator_TableClassName="V_ELEMI_MUNKA_IN_M_LISTDataTable" msprop:Generator_TableVarName="tableV_ELEMI_MUNKA_IN_M_LIST" msprop:Generator_RowChangedName="V_ELEMI_MUNKA_IN_M_LISTRowChanged" msprop:Generator_TablePropName="V_ELEMI_MUNKA_IN_M_LIST" msprop:Generator_RowDeletingName="V_ELEMI_MUNKA_IN_M_LISTRowDeleting" msprop:Generator_RowChangingName="V_ELEMI_MUNKA_IN_M_LISTRowChanging" msprop:Generator_RowEvHandlerName="V_ELEMI_MUNKA_IN_M_LISTRowChangeEventHandler" msprop:Generator_RowDeletedName="V_ELEMI_MUNKA_IN_M_LISTRowDeleted" msprop:Generator_RowClassName="V_ELEMI_MUNKA_IN_M_LISTRow" msprop:Generator_UserTableName="V_ELEMI_MUNKA_IN_M_LIST" msprop:Generator_RowEvArgName="V_ELEMI_MUNKA_IN_M_LISTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AZONOSITO" msprop:Generator_ColumnVarNameInTable="columnAZONOSITO" msprop:Generator_ColumnPropNameInRow="AZONOSITO" msprop:Generator_ColumnPropNameInTable="AZONOSITOColumn" msprop:Generator_UserColumnName="AZONOSITO" type="xs:decimal" />
+              <xs:element name="MAIN" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MAIN" msprop:Generator_ColumnVarNameInTable="columnMAIN" msprop:Generator_ColumnPropNameInTable="MAINColumn" msprop:Generator_UserColumnName="MAIN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KESZULTSEG" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="KESZULTSEG" msprop:Generator_ColumnVarNameInTable="columnKESZULTSEG" msprop:Generator_ColumnPropNameInTable="KESZULTSEGColumn" msprop:Generator_UserColumnName="KESZULTSEG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIORITAS" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PRIORITAS" msprop:Generator_ColumnVarNameInTable="columnPRIORITAS" msprop:Generator_ColumnPropNameInTable="PRIORITASColumn" msprop:Generator_UserColumnName="PRIORITAS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDO" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="IDO" msprop:Generator_ColumnVarNameInTable="columnIDO" msprop:Generator_ColumnPropNameInTable="IDOColumn" msprop:Generator_UserColumnName="IDO" type="xs:string" minOccurs="0" />
+              <xs:element name="BEJSZ" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BEJSZ" msprop:Generator_ColumnVarNameInTable="columnBEJSZ" msprop:Generator_ColumnPropNameInTable="BEJSZColumn" msprop:Generator_UserColumnName="BEJSZ" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNKASZAM" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MUNKASZAM" msprop:Generator_ColumnVarNameInTable="columnMUNKASZAM" msprop:Generator_ColumnPropNameInTable="MUNKASZAMColumn" msprop:Generator_UserColumnName="MUNKASZAM" type="xs:string" minOccurs="0" />
+              <xs:element name="CIM" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CIM" msprop:Generator_ColumnVarNameInTable="columnCIM" msprop:Generator_ColumnPropNameInTable="CIMColumn" msprop:Generator_UserColumnName="CIM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="114" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="START_IDO" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="START_IDO" msprop:Generator_ColumnVarNameInTable="columnSTART_IDO" msprop:Generator_ColumnPropNameInTable="START_IDOColumn" msprop:Generator_UserColumnName="START_IDO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KOMPLEX_MUNKA_AZONOSITO" msprop:Generator_ColumnVarNameInTable="columnKOMPLEX_MUNKA_AZONOSITO" msprop:Generator_ColumnPropNameInRow="KOMPLEX_MUNKA_AZONOSITO" msprop:Generator_ColumnPropNameInTable="KOMPLEX_MUNKA_AZONOSITOColumn" msprop:Generator_UserColumnName="KOMPLEX_MUNKA_AZONOSITO" type="xs:decimal" />
+              <xs:element name="SORSZAM" msprop:Generator_ColumnVarNameInTable="columnSORSZAM" msprop:Generator_ColumnPropNameInRow="SORSZAM" msprop:Generator_ColumnPropNameInTable="SORSZAMColumn" msprop:Generator_UserColumnName="SORSZAM" type="xs:decimal" />
+              <xs:element name="STATUSZ" msprop:Generator_ColumnVarNameInTable="columnSTATUSZ" msprop:Generator_ColumnPropNameInRow="STATUSZ" msprop:Generator_ColumnPropNameInTable="STATUSZColumn" msprop:Generator_UserColumnName="STATUSZ" type="xs:decimal" />
+              <xs:element name="TERVEZETT_KEZDET_IDO" msprop:Generator_ColumnVarNameInTable="columnTERVEZETT_KEZDET_IDO" msprop:Generator_ColumnPropNameInRow="TERVEZETT_KEZDET_IDO" msprop:Generator_ColumnPropNameInTable="TERVEZETT_KEZDET_IDOColumn" msprop:Generator_UserColumnName="TERVEZETT_KEZDET_IDO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TERVEZETT_VEG_IDO" msprop:Generator_ColumnVarNameInTable="columnTERVEZETT_VEG_IDO" msprop:Generator_ColumnPropNameInRow="TERVEZETT_VEG_IDO" msprop:Generator_ColumnPropNameInTable="TERVEZETT_VEG_IDOColumn" msprop:Generator_UserColumnName="TERVEZETT_VEG_IDO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VEGREHAJTAS_KEZDET_IDO" msprop:Generator_ColumnVarNameInTable="columnVEGREHAJTAS_KEZDET_IDO" msprop:Generator_ColumnPropNameInRow="VEGREHAJTAS_KEZDET_IDO" msprop:Generator_ColumnPropNameInTable="VEGREHAJTAS_KEZDET_IDOColumn" msprop:Generator_UserColumnName="VEGREHAJTAS_KEZDET_IDO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VEGREHAJTAS_VEG_IDO" msprop:Generator_ColumnVarNameInTable="columnVEGREHAJTAS_VEG_IDO" msprop:Generator_ColumnPropNameInRow="VEGREHAJTAS_VEG_IDO" msprop:Generator_ColumnPropNameInTable="VEGREHAJTAS_VEG_IDOColumn" msprop:Generator_UserColumnName="VEGREHAJTAS_VEG_IDO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KANORMTEV_AZONOSITO" msprop:Generator_ColumnVarNameInTable="columnKANORMTEV_AZONOSITO" msprop:Generator_ColumnPropNameInRow="KANORMTEV_AZONOSITO" msprop:Generator_ColumnPropNameInTable="KANORMTEV_AZONOSITOColumn" msprop:Generator_UserColumnName="KANORMTEV_AZONOSITO" type="xs:decimal" />
+              <xs:element name="KOV_KOPRIO_AZONOSITO" msprop:Generator_ColumnVarNameInTable="columnKOV_KOPRIO_AZONOSITO" msprop:Generator_ColumnPropNameInRow="KOV_KOPRIO_AZONOSITO" msprop:Generator_ColumnPropNameInTable="KOV_KOPRIO_AZONOSITOColumn" msprop:Generator_UserColumnName="KOV_KOPRIO_AZONOSITO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KOV_KANORMTEV_MEGNEVEZES" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="KOV_KANORMTEV_MEGNEVEZES" msprop:Generator_ColumnVarNameInTable="columnKOV_KANORMTEV_MEGNEVEZES" msprop:Generator_ColumnPropNameInTable="KOV_KANORMTEV_MEGNEVEZESColumn" msprop:Generator_UserColumnName="KOV_KANORMTEV_MEGNEVEZES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KOV_KOPRIO_MEGNEVEZES" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="KOV_KOPRIO_MEGNEVEZES" msprop:Generator_ColumnVarNameInTable="columnKOV_KOPRIO_MEGNEVEZES" msprop:Generator_ColumnPropNameInTable="KOV_KOPRIO_MEGNEVEZESColumn" msprop:Generator_UserColumnName="KOV_KOPRIO_MEGNEVEZES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MUNKAKEZDES" msprop:Generator_ColumnVarNameInTable="columnMUNKAKEZDES" msprop:Generator_ColumnPropNameInRow="MUNKAKEZDES" msprop:Generator_ColumnPropNameInTable="MUNKAKEZDESColumn" msprop:Generator_UserColumnName="MUNKAKEZDES" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MUNKABEFEJEZES" msprop:Generator_ColumnVarNameInTable="columnMUNKABEFEJEZES" msprop:Generator_ColumnPropNameInRow="MUNKABEFEJEZES" msprop:Generator_ColumnPropNameInTable="MUNKABEFEJEZESColumn" msprop:Generator_UserColumnName="MUNKABEFEJEZES" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OSYSDATE" msprop:Generator_ColumnVarNameInTable="columnOSYSDATE" msprop:Generator_ColumnPropNameInRow="OSYSDATE" msprop:Generator_ColumnPropNameInTable="OSYSDATEColumn" msprop:Generator_UserColumnName="OSYSDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MAIN_ICON" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MAIN_ICON" msprop:Generator_ColumnVarNameInTable="columnMAIN_ICON" msprop:Generator_ColumnPropNameInTable="MAIN_ICONColumn" msprop:Generator_UserColumnName="MAIN_ICON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ICON0" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ICON0" msprop:Generator_ColumnVarNameInTable="columnICON0" msprop:Generator_ColumnPropNameInTable="ICON0Column" msprop:Generator_UserColumnName="ICON0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="17" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ICON1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ICON1" msprop:Generator_ColumnVarNameInTable="columnICON1" msprop:Generator_ColumnPropNameInTable="ICON1Column" msprop:Generator_UserColumnName="ICON1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
