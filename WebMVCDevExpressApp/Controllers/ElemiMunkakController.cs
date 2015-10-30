@@ -22,8 +22,8 @@ namespace WebMVCDevExpressApp.Controllers
             return ElemiMunka.GetElemiMunkak(skip, take);
         }
 
-        [Route("TotalCount")]
-        public int TotalCount()
+        [Route("api/ElemiMunkak/TotalCount")]
+        public int GetTotalCount()
         {
             return ElemiMunka.GetElemiMunkakCount();
         }
