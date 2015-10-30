@@ -53,7 +53,7 @@ namespace WebMVCDevExpressApp.Models
             DataSetMirtusz DB = new DataSetMirtusz();
             using (DataSetMirtuszTableAdapters.V_ELEMI_MUNKA_IN_M_LISTTableAdapter ta = new DataSetMirtuszTableAdapters.V_ELEMI_MUNKA_IN_M_LISTTableAdapter())
             {
-                ta.FillBy(DB.V_ELEMI_MUNKA_IN_M_LIST, 10000+1);
+                ta.FillBy(DB.V_ELEMI_MUNKA_IN_M_LIST, 200+1);
             }
 
             var page = DB.V_ELEMI_MUNKA_IN_M_LIST.OrderBy(em => em.AZONOSITO).Skip(skip).Take(take);
@@ -70,6 +70,7 @@ namespace WebMVCDevExpressApp.Models
 
         public static int GetElemiMunkakCount()
         {
+            return 200;
             DataSetMirtusz DB = new DataSetMirtusz();
             using (DataSetMirtuszTableAdapters.V_ELEMI_MUNKA_IN_M_LISTTableAdapter ta = new DataSetMirtuszTableAdapters.V_ELEMI_MUNKA_IN_M_LISTTableAdapter())
             {

@@ -1,5 +1,6 @@
 ﻿<html ng-app="myApp">
 <head runat="server">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="/Content/dx.common.css" />
@@ -22,32 +23,35 @@
              text: 'Frissít',
              onClick: elemekSzamaChanged
              }"></div>
-    <div style="height:600px; max-width:750px; margin: 0 auto" dx-data-grid="{
-        dataSource: elemiMunkakList,
-        allowColumnResizing: true,
-        columns: [
-            { dataField: 'AZONOSITO', width: 50 },
-            { dataField: 'CIM', allowGrouping: false },
-            { dataField: 'MAIN', allowResizing: true, sortIndex: 0, sortOrder: 'asc', allowGrouping: true },
-            { dataField: 'KESZULTSEG', visible: false },
-            { dataField: 'PRIORITAS', width: 65, allowGrouping: false },
-        ],
-        columnChooser: { enabled: true },
-        allowColumnReordering: true,
-        sorting: { mode: 'multiple' },
-        groupPanel: { visible: true, emptyPanelText: 'Drag a column header here to group grid records' },
-        pager: { visible: true },
-        paging: { pageSize: 20 },
-        editing: {
-            editEnabled: true,
-            editMode: 'row',
-            insertEnabled: true,
-            removeEnabled: true
-        },
-        filterRow: { visible: true },
-        searchPanel: { visible: true },
-        selection: { mode: 'none' }
-    }"></div>
+    <div class="row">
+        <div class="col-sm-12" style="height:600px; margin: 0 auto" dx-data-grid="{
+            dataSource: elemiMunkakList,
+            allowColumnResizing: true,
+            columns: [
+                { dataField: 'AZONOSITO', width: 50, caption: 'ID' },
+                { dataField: 'CIM', allowGrouping: false, caption: 'Cím' },
+                { dataField: 'MAIN', allowResizing: true, sortIndex: 0, sortOrder: 'asc', allowGrouping: true, caption: 'Normatevékenység' },
+                { dataField: 'KESZULTSEG', visible: false, caption: 'Készültség' },
+                { dataField: 'PRIORITAS', width: 65, allowGrouping: false, caption: 'Prioritás' },
+            ],
+            columnChooser: { enabled: true },
+            allowColumnReordering: true,
+            sorting: { mode: 'multiple' },
+            groupPanel: { visible: true, emptyPanelText: 'Drag a column header here to group grid records' },
+            pager: { visible: true },
+            paging: { pageSize: 20 },
+            editing: {
+                editEnabled: true,
+                editMode: 'row',
+                insertEnabled: true,
+                removeEnabled: true
+            },
+            filterRow: { visible: true },
+            searchPanel: { visible: true },
+            selection: { mode: 'none' }
+        }">
+        </div>
+     </div>
 </body>
 </html>
 
