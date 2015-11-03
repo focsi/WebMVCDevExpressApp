@@ -1,6 +1,6 @@
 ﻿var myApp = angular.module('myApp', ['dx']);
 myApp.controller("gridCtrl", function ($scope,$http) {
-    console.log ( "gridCtrl 1");
+
     $scope.elemekSzama = 10;
     //$scope.elemiMunkakList = [];
     var SERVICE_URL = "http://localhost:59588/api/elemimunkak";
@@ -14,14 +14,17 @@ myApp.controller("gridCtrl", function ($scope,$http) {
                 params.filter = JSON.stringify(loadOptions.filter);
             }
             params.needCount = true; //You can use this parameter on the server side to ensure that a number of records is required
-            $.getJSON(SERVICE_URL + "/totalCount"/*, params*/, function (data) {
-                d.resolve(data, { totalCount: data });
-            });
-            return d.promise();
+
+            $http.get(SERVICE_URL + "/totalCount")
+                .then ( function (data) {
+                    d.resolve(data.data, { totalCount: data.data });
+                },function (error) {
+                    d.reject(error);
+                });
+            return d.promise();;
         },
 
         load: function (loadOptions) {
-            //return $.getJSON(SERVICE_URL);
             var d = new $.Deferred();
 
             var params = {};
@@ -37,10 +40,13 @@ myApp.controller("gridCtrl", function ($scope,$http) {
             params.skip = loadOptions.skip; //A number of records that should be skipped
             params.take = loadOptions.take; //A number of records that should be taken
 
-            $.getJSON( SERVICE_URL, params, function(data) {
-                d.resolve(data);
-            });
-            return d.promise();
+            $http.get(SERVICE_URL, { params: params })
+                .then(function (data) {
+                    d.resolve(data.data);
+                }, function (error) {
+                    d.reject(error);
+                });
+            return d.promise();;
         },
 
         byKey: function (key) {
